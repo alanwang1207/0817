@@ -5,6 +5,7 @@ function ShowStar($iCount, $sWhat = "*")
 	for ($i = 1; $i <= $iCount; $i++)
 	{
 		$result .= $sWhat;
+		// result = resule . swhat
 	}
 	echo $result;
 }
