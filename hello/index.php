@@ -1,3 +1,7 @@
+<?php
+var_dump($_POST);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +10,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form method = "post" action="hello.php">
+    <form method = "post" action="">
     你的名字:
     <input type="text" name = "txtUserName">
-    <input type="submit" name = "btnOK" value="送出">
+    <input type="submit" name = "btnOK" value="send">
     </form>
 </body>
 </html>
