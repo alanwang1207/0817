@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
 <body>
     嗨嗨～
     <?php
-    echo $_POST[txtUserName];
+    echo $_SESSION["who"];
     ?>
 </body>
 </html>

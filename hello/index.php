@@ -1,5 +1,10 @@
 <?php
-var_dump($_POST);
+    session_start();
+    if( isset($_POST["btnOK"]) ) { 
+        $_SESSION["who"] = $_POST["txtUserName"];
+        header("Location: hello.php");
+        exit();
+    }
 ?>
 
 <!DOCTYPE html>
