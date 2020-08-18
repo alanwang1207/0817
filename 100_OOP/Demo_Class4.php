@@ -3,6 +3,7 @@
 $obj = new CDog(3, 10);
 $obj->makeNoise();
 echo "weight: ", $obj->getWeight(), "<br>";
+$obj->makeNoise();
 echo "price: ", $obj->getPrice(), "<br>";
 
 class CAnimal
@@ -47,7 +48,7 @@ class CDog extends CAnimal {
 	
 	public function makeNoise()
 	{
-		parent::makeNoise();
+		parent::makeNoise(); //父階方法
 		echo "<br>";
 		echo "Dog: Bark!<br>";
 	}

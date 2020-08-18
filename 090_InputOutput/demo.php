@@ -26,6 +26,7 @@
 
 <!-- <?php
 $scorelist = array(50, 100, 200, 35);
+sort($scorelist);
 ?>
 <ul>
 <?php foreach ($scorelist as $value) {?>

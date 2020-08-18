@@ -1,5 +1,3 @@
-<?php
-$content = <<<fileContent
 PHP基本語法重點整理、
 自訂函式寫作注意事項、
 陣列與相關函式ddd、
@@ -14,9 +12,3 @@ PHP資料庫程式設計、
 Web Services、
 PHP與jQuery、
 jQuery Mobile整合運用
-fileContent;
-
-$fileSize = file_put_contents("data2.txt", $content);
-echo "File size: $fileSize <br />-- Done --";
-?>
-<!-- 寫檔 -->

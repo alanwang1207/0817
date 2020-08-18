@@ -11,3 +11,4 @@ fclose($f);
 echo "-- Done --"
 
 ?>
+<!-- fputs 只寫一行 -->

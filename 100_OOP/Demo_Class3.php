@@ -1,7 +1,8 @@
 <?php
 
-$obj = new CAnimal(3);
-echo "weight: ", $obj->getWeight(), "<br>";
+$obj = new CAnimal(20);
+echo "weight: ", $obj->getWeight(), "<br>",
+$obj->makeNoise(), "<br>";
 //$obj2 = $obj;
 //echo "flag 1<br>";
 $obj = null;

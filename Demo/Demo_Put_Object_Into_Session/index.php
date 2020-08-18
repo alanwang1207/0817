@@ -3,8 +3,8 @@ require_once "ClassLib.php";
 session_start();
 
 if (!isset($_SESSION["obj"])) {
-	$obj = new CDog(1, 10);	
-	$_SESSION["obj"] = $obj;
+	$obj = new CDog(1, 10);	//造物件
+	$_SESSION["obj"] = $obj;//存進session
 }
 else {
 	$obj = $_SESSION["obj"];
