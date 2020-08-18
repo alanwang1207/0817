@@ -1,3 +1,35 @@
+<?php 
+
+if (isset($_GET["logout"]))
+{
+	setcookie("userName", "Guest", time() - 3600);//清除cookie
+	header("Location: index.php");
+	exit();
+}
+
+if (isset($_POST["btnHome"]))
+{
+	header("Location: index.php");
+	exit();
+}
+
+if (isset($_POST["btnOK"]))
+{
+	$sUserName = $_POST["txtUserName"];
+	if (trim($sUserName) != "")
+	{
+		setcookie("userName", $sUserName);
+		if (isset($_COOKIE["lastPage"]))
+		  header(sprintf("Location: %s", $_COOKIE["lastPage"]));
+		else
+		   header("Location: index.php");
+		exit();
+	}
+	
+}
+
+?>
+
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
