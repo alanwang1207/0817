@@ -2,7 +2,7 @@
 
 if (isset($_GET["logout"]))
 {
-	setcookie("userName", "Guest", time() - 3600);
+	setcookie("userName", "Guest", time() - 3600);//清除cookie
 	header("Location: index.php");
 	exit();
 }
